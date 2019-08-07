@@ -1,0 +1,9 @@
+# Ignore everything
+/**
+
+# But not these files...
+!/.zshrc
+!/.gitignore
+!/.gitconfig
+!/README.md
+!/Brewfile

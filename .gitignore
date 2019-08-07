@@ -5,4 +5,5 @@
 !.zshrc
 !.gitignore
 !.gitconfig
+!/.config/brewfile/*
 

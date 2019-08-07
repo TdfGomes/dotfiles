@@ -1,5 +1,30 @@
 
 # tap repositories and their packages
 
-# Other Homebrew packages
+tap homebrew/core
 brew docker
+brew icu4c
+brew mas
+brew ncurses
+brew node
+brew nvm
+brew pcre
+brew yarn
+brew zsh
+
+tap homebrew/cask-fonts
+cask font-fira-code
+
+tap homebrew/cask
+cask slack
+cask zoomus
+
+tap rcmdnk/file
+brew brew-file
+
+tap sambadevi/powerlevel9k
+brew powerlevel9k
+
+# Other Cask applications
+cask font-hack-nerd-font
+cask spotify

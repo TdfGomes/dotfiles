@@ -29,3 +29,4 @@ brew powerlevel9k
 cask font-hack-nerd-font
 cask slack
 cask zoomus
+cask visual-studio-code

@@ -16,8 +16,8 @@ tap homebrew/cask-fonts
 cask font-fira-code
 
 tap homebrew/cask
-cask slack
-cask zoomus
+cask java
+cask spotify
 
 tap rcmdnk/file
 brew brew-file
@@ -27,4 +27,5 @@ brew powerlevel9k
 
 # Other Cask applications
 cask font-hack-nerd-font
-cask spotify
+cask slack
+cask zoomus

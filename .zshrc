@@ -117,3 +117,10 @@ if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
 
+
+pidportfunction() {
+lsof -n -i4TCP:$1 | grep LISTEN
+}
+
+alias pidport=pidportfunction
+

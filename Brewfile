@@ -3,6 +3,7 @@
 
 tap homebrew/core
 brew docker
+brew fswatch
 brew icu4c
 brew mas
 brew ncurses
@@ -18,6 +19,7 @@ cask font-fira-code
 tap homebrew/cask
 cask java
 cask spotify
+cask zoomus
 
 tap rcmdnk/file
 brew brew-file
@@ -28,5 +30,3 @@ brew powerlevel9k
 # Other Cask applications
 cask font-hack-nerd-font
 cask slack
-cask zoomus
-cask visual-studio-code

@@ -29,5 +29,4 @@ brew powerlevel9k
 
 # Other Cask applications
 cask font-hack-nerd-font
-cask slack
 cask visual-studio-code

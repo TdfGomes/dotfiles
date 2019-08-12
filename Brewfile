@@ -19,7 +19,7 @@ cask font-fira-code
 tap homebrew/cask
 cask java
 cask spotify
-cask zoomus
+cask whatsapp
 
 tap rcmdnk/file
 brew brew-file
@@ -29,5 +29,6 @@ brew powerlevel9k
 
 # Other Cask applications
 cask font-hack-nerd-font
-cask visual-studio-code
 cask slack
+cask visual-studio-code
+cask zoomus

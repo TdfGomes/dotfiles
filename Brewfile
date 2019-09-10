@@ -17,6 +17,7 @@ tap homebrew/cask-fonts
 cask font-fira-code
 
 tap homebrew/cask
+cask docker
 cask java
 cask slack
 cask visual-studio-code

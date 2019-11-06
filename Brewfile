@@ -3,6 +3,7 @@
 
 tap homebrew/core
 brew docker
+brew fauna-shell
 brew fswatch
 brew icu4c
 brew mas

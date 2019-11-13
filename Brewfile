@@ -5,12 +5,19 @@ tap homebrew/core
 brew docker
 brew fauna-shell
 brew fswatch
+brew gdbm
 brew icu4c
 brew mas
 brew ncurses
 brew node
 brew nvm
+brew openssl@1.1
 brew pcre
+brew python
+brew readline
+brew sqlite
+brew watchman
+brew xz
 brew yarn
 brew zsh
 

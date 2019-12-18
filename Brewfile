@@ -25,7 +25,7 @@ tap homebrew/cask-fonts
 cask font-fira-code
 
 tap homebrew/cask
-cask docker
+cask discord
 cask google-cloud-sdk
 cask java
 cask slack
@@ -39,6 +39,7 @@ tap sambadevi/powerlevel9k
 brew powerlevel9k
 
 # Other Cask applications
+cask docker
 cask font-hack-nerd-font
 cask graphql-playground
 cask postman

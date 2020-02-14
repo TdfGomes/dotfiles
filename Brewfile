@@ -6,6 +6,7 @@ brew docker
 brew fauna-shell
 brew fswatch
 brew gdbm
+brew gh
 brew icu4c
 brew mas
 brew ncurses
@@ -23,24 +24,24 @@ brew zsh
 
 tap homebrew/cask-fonts
 cask font-fira-code
+cask font-hack-nerd-font
 
 tap homebrew/cask
 cask docker
 cask google-cloud-sdk
+cask graphql-playground
 cask java
+cask postman
 cask slack
+cask spotify
 cask visual-studio-code
+cask whatsapp
 cask zoomus
+
+tap github/gh
 
 tap rcmdnk/file
 brew brew-file
 
 tap sambadevi/powerlevel9k
 brew powerlevel9k
-
-# Other Cask applications
-cask font-hack-nerd-font
-cask graphql-playground
-cask postman
-cask spotify
-cask whatsapp

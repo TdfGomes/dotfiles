@@ -17,6 +17,7 @@ brew pcre
 brew python
 brew readline
 brew sqlite
+brew tree
 brew watchman
 brew xz
 brew yarn
@@ -25,26 +26,13 @@ brew zsh
 tap homebrew/cask-fonts
 cask font-fira-code
 cask font-hack-nerd-font
+cask font-hack-nerd-font
 
 tap homebrew/cask
-
-tap github/gh
-
-tap rcmdnk/file
-brew brew-file
-
-tap sambadevi/powerlevel9k
-brew powerlevel9k
-
-# Other Cask applications
-cask docker
-cask font-hack-nerd-font
-cask graphql-playground
-cask postman
-cask spotify
-cask whatsapp
 cask discord
+cask docker
 cask google-cloud-sdk
+cask graphql-playground
 cask graphql-playground
 cask java
 cask postman
@@ -53,3 +41,11 @@ cask spotify
 cask visual-studio-code
 cask whatsapp
 cask zoomus
+
+tap github/gh
+
+tap rcmdnk/file
+brew brew-file
+
+tap sambadevi/powerlevel9k
+brew powerlevel9k

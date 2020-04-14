@@ -31,9 +31,8 @@ cask font-hack-nerd-font
 tap homebrew/cask
 cask discord
 cask docker
+cask firefox
 cask github
-cask google-cloud-sdk
-cask graphql-playground
 cask graphql-playground
 cask java
 cask postman

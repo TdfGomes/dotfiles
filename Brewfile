@@ -32,9 +32,7 @@ tap homebrew/cask
 cask discord
 cask docker
 cask firefox
-cask github
 cask graphql-playground
-cask java
 cask postman
 cask slack
 cask spotify

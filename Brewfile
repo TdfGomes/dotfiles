@@ -2,6 +2,7 @@
 # tap repositories and their packages
 
 tap homebrew/core
+brew deno
 brew docker
 brew fauna-shell
 brew fswatch

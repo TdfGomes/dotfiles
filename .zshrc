@@ -124,3 +124,4 @@ lsof -n -i4TCP:$1 | grep LISTEN
 
 alias pidport=pidportfunction
 
+export PATH="/Users/tiagogomes/.deno/bin:$PATH"

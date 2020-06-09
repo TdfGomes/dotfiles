@@ -33,6 +33,7 @@ tap homebrew/cask
 cask discord
 cask docker
 cask firefox
+cask graphiql
 cask graphql-playground
 cask postman
 cask slack

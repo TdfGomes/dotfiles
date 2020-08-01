@@ -15,7 +15,6 @@ brew node
 brew nvm
 brew openssl@1.1
 brew pcre
-brew python
 brew readline
 brew sqlite
 brew tree
@@ -44,8 +43,15 @@ cask zoomus
 
 tap github/gh
 
+tap heroku/brew
+brew heroku
+brew heroku/brew/heroku-node
+
 tap rcmdnk/file
 brew brew-file
 
 tap sambadevi/powerlevel9k
 brew powerlevel9k
+
+# Other Homebrew packages
+brew python

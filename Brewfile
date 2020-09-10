@@ -29,6 +29,7 @@ cask font-hack-nerd-font
 cask font-hack-nerd-font
 
 tap homebrew/cask
+cask alfred
 cask discord
 cask docker
 cask firefox

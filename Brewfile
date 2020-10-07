@@ -35,6 +35,7 @@ cask docker
 cask firefox
 cask graphiql
 cask graphql-playground
+cask openoffice
 cask postman
 cask slack
 cask spotify

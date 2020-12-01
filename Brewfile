@@ -10,11 +10,13 @@ brew gdbm
 brew gh
 brew icu4c
 brew mas
+brew mysql
 brew ncurses
 brew node
 brew nvm
 brew openssl@1.1
 brew pcre
+brew protobuf
 brew readline
 brew sqlite
 brew tree
@@ -30,10 +32,8 @@ cask font-hack-nerd-font
 
 tap homebrew/cask
 cask alfred
-cask discord
 cask docker
 cask firefox
-cask graphiql
 cask graphql-playground
 cask openoffice
 cask postman
@@ -45,10 +45,6 @@ cask zoomus
 
 tap github/gh
 
-tap heroku/brew
-brew heroku
-brew heroku/brew/heroku-node
-
 tap rcmdnk/file
 brew brew-file
 
@@ -57,3 +53,4 @@ brew powerlevel9k
 
 # Other Homebrew packages
 brew python
+brew sequel-ace

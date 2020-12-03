@@ -40,7 +40,6 @@ cask slack
 cask spotify
 cask visual-studio-code
 cask whatsapp
-cask zoomus
 
 tap github/gh
 
@@ -53,3 +52,6 @@ brew powerlevel9k
 # Other Homebrew packages
 brew python
 brew sequel-ace
+
+# Other Cask applications
+cask zoomus

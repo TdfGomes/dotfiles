@@ -4,7 +4,6 @@
 tap homebrew/core
 brew deno
 brew docker
-brew fauna-shell
 brew fswatch
 brew gdbm
 brew gh

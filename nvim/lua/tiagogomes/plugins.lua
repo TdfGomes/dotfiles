@@ -61,4 +61,9 @@ return packer.startup{
     use 'nvim-telescope/telescope.nvim'
     --Git
     use 'tpope/vim-fugitive'
+    -- Lualine
+    use {
+      'hoob3rt/lualine.nvim',
+      requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    }
 end}

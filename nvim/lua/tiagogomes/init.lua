@@ -1,0 +1,8 @@
+require('tiagogomes.settings')
+require('tiagogomes.plugins')
+require('tiagogomes.netrw')
+require('tiagogomes.theme')
+require('tiagogomes.telescope')
+require('tiagogomes.treesitter')
+require('tiagogomes.lsp')
+require('tiagogomes.maps')

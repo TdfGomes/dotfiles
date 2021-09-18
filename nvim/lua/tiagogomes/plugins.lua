@@ -49,8 +49,11 @@ packer.init {
 
 return packer.startup{
   function(use)
-  
+    -- LSP  
     use 'neovim/nvim-lspconfig'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/nvim-cmp'
     -- Neovim Tree shitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use 'nvim-treesitter/playground'
@@ -67,3 +70,5 @@ return packer.startup{
       requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
 end}
+
+

@@ -35,11 +35,12 @@ local on_attach = function(client, bufnr)
 
   vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
 
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+ 
 end
 
 local linter = {
   lintCommand = "eslint_d -f visualstudio --stdin --stdin-filename ${INPUT}",
-  -- lintCommand = "eslint_d -f unix --stdin --stdin-filename ${INPUT}",
   lintIgnoreExitCode = true,
   lintStdin = true,
   lintFormats = {"%f(%l,%c): %tarning %m", "%f(%l,%c): %rror %m"},
@@ -61,10 +62,10 @@ local languages = {
   ['javascript.jsx'] = {formatter, linter},
   json = {formatter},
   html = {formatter},
-  scss = {formatter},
   css = {formatter},
   markdown = {formatter},
 }
+
 -- install efm-languageserver with brew install efm-langserver
 nvim_lsp.efm.setup {
   init_options = {documentFormatting = true},
@@ -73,7 +74,28 @@ nvim_lsp.efm.setup {
         languages = languages 
     }
 }
+
 nvim_lsp.tsserver.setup{ on_attach=on_attach }
+
+-- Autocomplete
+local cmp = require'cmp'
+
+cmp.setup({
+  completion = {
+    completeopt = 'menu,menuone,noinsert',
+  },
+  mapping = {
+    ['<Tab>'] = cmp.mapping.confirm({
+      behavior = cmp.ConfirmBehavior.Insert,
+      select = true,
+    }),
+  },
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'buffer' },
+  },
+  documentation = false
+})
 
 -- a bit of style
 vim.fn.sign_define("LspDiagnosticsSignError", {text = ""})

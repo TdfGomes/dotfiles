@@ -24,11 +24,14 @@ require('lualine').setup {
     lualine_c = {
       {
         'filename',
-        path= 1,
+        path= 0,
       },
       {
-        'g:coc_status',
-      },
+        'diagnostics',
+        sources = {'nvim_lsp'},
+        sections = {'error', 'warn', 'info', 'hint'},
+        symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '}
+      }
     },
     lualine_x = {
       {

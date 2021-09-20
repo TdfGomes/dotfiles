@@ -1,5 +1,5 @@
 local map = vim.api.nvim_set_keymap
-local nvim_create_augroups = rquire('functions')
+local nvim_create_augroups = require('tiagogomes.functions')
 
 --telescope
 map('n', '<leader>ff', "<cmd>lua require('telescope.builtin').find_files()<cr>", {noremap = true})
@@ -18,9 +18,9 @@ map('n','<silent>bp',':bp', {noremap = true})--buffer previous
 map('n','˚','.-2<CR>==',{noremap = true})
 map('n','∆','.+1<CR>==',{noremap = true})
 --Git fugitive
-map('n', '<leader>dl',':diffget //3')
-map('n', '<leader>dh',':diffget //2')
-map('n', '<leader>gs', ':G<cr>')
+map('n', '<leader>dl',':diffget //3', {noremap = false})
+map('n', '<leader>dh',':diffget //2', {noremap = false})
+map('n', '<leader>gs', ':G<cr>', {noremap = false})
 --Open Explore
 map('n', '<leader>e', ':Explore', {noremap = true})
 

@@ -1,7 +1,12 @@
 require('nvim-treesitter.configs').setup {
-  ensure_installed = "maintained", 
+  ensure_installed = "maintained",
   highlight = {
-    enable = true,
     additional_vim_regex_highlighting= false,
+    enable = true,
   },
-} 
+  indent = {enable = {"javascriptreact", "javascript", "typescript", "typescriptreact" }},
+  autotag = {
+    filetypes = {'javascriptreact', 'typescriptreact'},
+    enable = true
+  },
+}

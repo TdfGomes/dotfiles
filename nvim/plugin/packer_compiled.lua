@@ -81,6 +81,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-cmp"
@@ -92,6 +96,10 @@ _G.packer_plugins = {
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -108,6 +116,10 @@ _G.packer_plugins = {
   ["plenary.nvim"] = {
     loaded = true,
     path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["telescope-fzy-native.nvim"] = {
+    loaded = true,
+    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/telescope-fzy-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

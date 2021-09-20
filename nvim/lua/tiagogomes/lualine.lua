@@ -38,3 +38,4 @@ require('lualine').setup {
     },
   },
   extensions = { 'fugitive', 'quickfix' }
+}

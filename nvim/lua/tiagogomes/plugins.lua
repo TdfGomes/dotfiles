@@ -62,6 +62,7 @@ return packer.startup{
     -- Telescope
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope-fzy-native.nvim'
     --Git
     use 'tpope/vim-fugitive'
     -- Lualine

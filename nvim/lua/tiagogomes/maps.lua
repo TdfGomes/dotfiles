@@ -11,9 +11,9 @@ map('n','<C-k>','<C-w>k', {noremap = true})
 map('n','<C-h>','<C-w>h', {noremap = true})
 map('n','<C-l>','<C-w>l', {noremap = true})
 --buffers navigation
-map('n','<silent>bc',':bd', {noremap = true})--buffer close
-map('n','<silent>bn',':bn', {noremap = true})--buffer next
-map('n','<silent>bp',':bp', {noremap = true})--buffer previous
+map('n','bc',':bd<cr>', {noremap = true, silent = true})--buffer close
+map('n','bn',':bn<cr>', {noremap = true,silent = true})--buffer next
+map('n','bp',':bp<cr>', {noremap = true, silent = true})--buffer previous
 --move lines
 map('n','˚','.-2<CR>==',{noremap = true})
 map('n','∆','.+1<CR>==',{noremap = true})

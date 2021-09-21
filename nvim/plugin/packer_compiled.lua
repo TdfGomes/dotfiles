@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/tiagogomes/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/tiagogomes/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/tiagogomes/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/tiagogomes/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/tiagogomes/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/tiago.gomes/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/tiago.gomes/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/tiago.gomes/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/tiago.gomes/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/tiago.gomes/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -71,63 +71,63 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp-buffer"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-ts-autotag"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["onedark.nvim"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/onedark.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/onedark.nvim"
   },
   playground = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/playground"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
   ["telescope-fzy-native.nvim"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/telescope-fzy-native.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/telescope-fzy-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/Users/tiagogomes/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/vim-fugitive"
   }
 }
 

@@ -7,4 +7,8 @@ require('tiagogomes.lualine')
 require('tiagogomes.telescope')
 require('tiagogomes.treesitter')
 require('tiagogomes.autopairs')
+require('tiagogomes.nvimtree')
 require('tiagogomes.maps')
+
+
+

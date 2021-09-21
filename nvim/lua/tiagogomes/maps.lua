@@ -22,7 +22,7 @@ map('n', '<leader>dl',':diffget //3', {noremap = false})
 map('n', '<leader>dh',':diffget //2', {noremap = false})
 map('n', '<leader>gs', ':G<cr>', {noremap = false})
 --Open Explore
-map('n', '<leader>e', ':Explore<cr>', {noremap = true})
+map('n', '<C-e>', ':NvimTreeToggle<cr>', {noremap = true})
 
 -- autocmds
 local autocmds = {

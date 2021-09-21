@@ -1,6 +1,7 @@
 local set = vim.opt
 
 vim.g.mapleader = ' '
+vim.o.updatetime = 250
 -- tabs
 set.tabstop = 2
 set.shiftwidth = 2

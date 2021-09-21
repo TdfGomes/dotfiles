@@ -102,3 +102,16 @@ vim.fn.sign_define("LspDiagnosticsSignError", {text = ""})
 vim.fn.sign_define("LspDiagnosticsSignWarning", {text = ""})
 vim.fn.sign_define("LspDiagnosticsSignInformation", {text = ""})
 vim.fn.sign_define("LspDiagnosticsSignHint", {text = ""})
+
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+ vim.lsp.diagnostic.on_publish_diagnostics, {
+   underline = true,
+   virtual_text = false,
+   signs = true,
+   update_in_insert = false,
+ }
+)
+
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.lsp.diagnostic.show_line_diagnostics({focusable=false})]]
+

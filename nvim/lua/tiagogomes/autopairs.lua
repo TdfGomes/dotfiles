@@ -1,4 +1,9 @@
-require('nvim-autopairs').setup{}
+require('nvim-autopairs').setup{
+  ignored_next_char = "[%w%.]", -- will ignore alphanumeric and `.` symbol
+  fast_wrap = {
+    map = '<esc>'
+  }
+}
 
 require("nvim-autopairs.completion.cmp").setup({
   map_cr = true, --  map <CR> on insert mode

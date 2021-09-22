@@ -38,7 +38,7 @@ local on_attach = function(client, bufnr)
   capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
  
 end
-
+--do not forget you will need to run npm i -g eslint_d for this to work
 local linter = {
   lintCommand = "eslint_d -f visualstudio --stdin --stdin-filename ${INPUT}",
   lintIgnoreExitCode = true,
@@ -48,6 +48,7 @@ local linter = {
   formatStdin = true
 }
 
+--do not forget you will need to run npm i -g prettier_d_slim for this to work
 local formatter  = {
   formatCommand = "prettier_d_slim --stdin --stdin-filepath ${INPUT}",
   formatStdin = true

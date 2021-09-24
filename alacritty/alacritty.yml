@@ -1,4 +1,3 @@
-
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 # Any items in the `env` entry below will be added as
@@ -88,12 +87,12 @@ tabspaces: 8
 font:
   # Normal (roman) font face
   normal:
-    family: Hack Nerd Font
+    family: Hack Nerd Font 
     # The `style` can be specified to pick a specific face.
     style: Regular
 
   # Point size
-  size: 14.5
+  size: 15
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -155,7 +154,7 @@ colors:
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   cursor:
-    cursor: '0xd9d9d9'
+    cursor: '0xd9d9d9' 
   # Normal colors
   normal:
     black:   '0x546d79'
@@ -191,7 +190,7 @@ colors:
   #  magenta: '0xc678dd'
   #  cyan:    '0x56b6c2'
   #  white:   '0xffffff'
-
+  
   # Indexed Colors
   #
   # The indexed colors include all colors from 16 to 256.

@@ -38,6 +38,9 @@ packer.init {
    },
    git = {
       clone_timeout = 600, -- Timeout, in seconds, for git clones
+      subcommands = {
+        update = 'pull --ff-only --progress --rebase=true',
+      }
    },
    auto_clean = true,
    compile_on_sync = true,

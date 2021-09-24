@@ -59,11 +59,11 @@ return packer.startup{
     use 'hrsh7th/nvim-cmp'
     -- Neovim Tree shitter
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+    use 'nvim-treesitter/playground'
     use 'windwp/nvim-ts-autotag'
     use 'windwp/nvim-autopairs'
-    use 'nvim-treesitter/playground'
     -- Theme
-    use 'navarasu/onedark.nvim'
+    use 'TdfGomes/onedark.nvim'
     -- Telescope
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'

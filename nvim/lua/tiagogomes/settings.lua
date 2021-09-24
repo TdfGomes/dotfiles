@@ -19,5 +19,6 @@ set.ignorecase = true
 set.smartcase = true
 set.hlsearch = true
 set.incsearch = true
-
+--clipboard
+set.clipboard= 'unnamed'
 

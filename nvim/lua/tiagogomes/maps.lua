@@ -2,6 +2,7 @@ local map = vim.api.nvim_set_keymap
 local nvim_create_augroups = require('tiagogomes.functions')
 
 --telescope
+map('n', '<leader>fs', "<cmd>lua require('telescope.builtin').grep_string({ path_display = true, search = vim.fn.input('Grep String > ')})<cr>", {noremap = true})
 map('n', '<leader>ff', "<cmd>lua require('telescope.builtin').find_files()<cr>", {noremap = true})
 map('n', '<leader>fg', "<cmd>lua require('telescope.builtin').live_grep()<cr>", {noremap = true})
 map('n', '<leader>fb', "<cmd>lua require('telescope.builtin').buffers()<cr>", {noremap = true})

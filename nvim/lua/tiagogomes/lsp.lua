@@ -1,4 +1,5 @@
 local nvim_lsp = require('lspconfig')
+local organize_imports = require('tiagogomes.functions').organize_imports
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
@@ -35,7 +36,6 @@ local on_attach = function(client, bufnr)
 
   vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
 
-  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
  
 end
 
@@ -75,7 +75,16 @@ nvim_lsp.efm.setup {
     }
 }
 
-nvim_lsp.tsserver.setup{ on_attach=on_attach }
+nvim_lsp.tsserver.setup{ 
+  on_attach=on_attach,
+  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+  commands = {
+    OrganizeImports = {
+      organize_imports,
+      description = 'Organize Imports'
+    }
+  }
+}
 
 -- Autocomplete
 local cmp = require'cmp'

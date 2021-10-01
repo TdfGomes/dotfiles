@@ -19,11 +19,11 @@ map('n','bp',':bp<cr>', {noremap = true, silent = true})--buffer previous
 map('n','˚','.-2<CR>==',{noremap = true})
 map('n','∆','.+1<CR>==',{noremap = true})
 --Git fugitive
-map('n', '<leader>dl',':diffget //3', {noremap = false})
-map('n', '<leader>dh',':diffget //2', {noremap = false})
+map('n', '<leader>dl',':diffget //3<cr>', {noremap = false})
+map('n', '<leader>dh',':diffget //2<cr>', {noremap = false})
 map('n', '<leader>gs', ':G<cr>', {noremap = false})
 --Open Explore
-map('n', '<C-e>', ':NvimTreeToggle<cr>', {noremap = true})
+map('n', '<C-e>', ':NvimTreeFindFile<cr>', {noremap = true})
 
 -- autocmds
 local autocmds = {

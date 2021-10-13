@@ -92,17 +92,26 @@ local cmp = require'cmp'
 
 cmp.setup({
   completion = {
-    completeopt = 'menu,menuone,noinsert',
+    completeopt = 'menu,menuone,noselect',
   },
+  snippet = {
+      expand = function(args)
+        vim.fn["vsnip#anonymous"](args.body)
+      end,
+    },
   mapping = {
     ['<CR>'] = cmp.mapping.confirm({
-      behavior = cmp.ConfirmBehavior.Insert,
+      behavior = cmp.ConfirmBehavior.Replace,
       select = true,
     }),
   },
   sources = {
     { name = 'nvim_lsp' },
     { name = 'buffer' },
+    { name = 'buffer' },
+    { name = 'calc' },
+    { name = 'path' },
+    { name = 'spell' },
   },
   documentation = false
 })

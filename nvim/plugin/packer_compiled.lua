@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/LuaSnip"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp-buffer"
@@ -77,9 +81,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
   },
-  ["cmp-vsnip"] = {
+  cmp_luasnip = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp-vsnip"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -141,10 +145,6 @@ _G.packer_plugins = {
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/vim-fugitive"
-  },
-  ["vim-vsnip"] = {
-    loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/vim-vsnip"
   }
 }
 

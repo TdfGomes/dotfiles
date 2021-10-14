@@ -95,10 +95,10 @@ cmp.setup({
     completeopt = 'menu,menuone,noselect',
   },
   snippet = {
-      expand = function(args)
-        vim.fn["vsnip#anonymous"](args.body)
-      end,
-    },
+    expand = function(args)
+      require('luasnip').lsp_expand(args.body)
+    end,
+  },
   mapping = {
     ['<CR>'] = cmp.mapping.confirm({
       behavior = cmp.ConfirmBehavior.Replace,
@@ -108,7 +108,7 @@ cmp.setup({
   sources = {
     { name = 'nvim_lsp' },
     { name = 'buffer' },
-    { name = 'buffer' },
+    { name = 'luasnip' },
     { name = 'calc' },
     { name = 'path' },
     { name = 'spell' },

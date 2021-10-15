@@ -31,54 +31,17 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
   buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
-  buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+  buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<cR>', opts)
   
   client.resolved_capabilities.document_formatting = false
   client.resolved_capabilities.document_range_formatting = false
 
-  vim.cmd("command -buffer Formatting lua vim.lsp.buf.formatting()")
   vim.cmd("command -buffer FormattingSync lua vim.lsp.buf.formatting_sync()")
 
   vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
 
- 
 end
 
-local linter = {
-  lintCommand = "eslint_d -f visualstudio --stdin --stdin-filename ${INPUT}",
-  lintIgnoreExitCode = true,
-  lintStdin = true,
-  lintFormats = {"%f(%l,%c): %tarning %m", "%f(%l,%c): %rror %m"},
-  formatCommand = "eslint_d --fix-to-stdout --stdin --stdin-filename=${INPUT}",
-  formatStdin = true
-}
-
-local formatter  = {
-  formatCommand = "prettier_d_slim --stdin --stdin-filepath ${INPUT}",
-  formatStdin = true
-}
-
-local languages = {
-  typescript = {formatter, linter},
-  javascript = {formatter, linter},
-  typescriptreact = {formatter, linter},
-  ['typescript.tsx'] = {formatter, linter},
-  javascriptreact = {formatter, linter},
-  ['javascript.jsx'] = {formatter, linter},
-  json = {formatter},
-  html = {formatter},
-  css = {formatter},
-  markdown = {formatter},
-}
-
--- install efm-languageserver with brew install efm-langserver
-nvim_lsp.efm.setup {
-  init_options = {documentFormatting = true},
-    settings = {
-        rootMarkers = {".git/"},
-        languages = languages 
-    }
-}
 
 nvim_lsp.tsserver.setup{ 
   on_attach=on_attach,
@@ -91,6 +54,12 @@ nvim_lsp.tsserver.setup{
   }
 }
 
+-- npm i -g vscode-langservers-extracted
+nvim_lsp.eslint.setup{
+  on_attach = function(client,bufnr)
+      vim.cmd [[autocmd BufWritePre <buffer> EslintFixAll]]
+  end
+}
 -- Autocomplete
 local cmp = require'cmp'
 

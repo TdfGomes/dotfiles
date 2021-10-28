@@ -31,35 +31,35 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
   buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
-  buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<cR>', opts)
-  
+  --buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<cR>', opts)
+
   client.resolved_capabilities.document_formatting = false
   client.resolved_capabilities.document_range_formatting = false
 
-  vim.cmd("command -buffer FormattingSync lua vim.lsp.buf.formatting_sync()")
-
   vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
+
+  vim.cmd [[autocmd BufWritePre <buffer> EslintFixAll]]
+
+  vim.cmd [[autocmd CursorHold <buffer> lua vim.lsp.diagnostic.show_line_diagnostics({focusable=false})]]
 
 end
 
-
-nvim_lsp.tsserver.setup{ 
-  on_attach=on_attach,
-  capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
-  commands = {
-    OrganizeImports = {
-      organize_imports,
-      description = 'Organize Imports'
+local servers = { 'tsserver', 'eslint' }
+for _, lsp in ipairs(servers) do
+  nvim_lsp[lsp].setup {
+    on_attach = on_attach,
+    flags = {
+      debounce_text_changes = 150,
+    },
+    capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+    commands = {
+      OrganizeImports = {
+        organize_imports,
+        description = 'Organize Imports'
+      }
     }
   }
-}
-
--- npm i -g vscode-langservers-extracted
-nvim_lsp.eslint.setup{
-  on_attach = function(client,bufnr)
-      vim.cmd [[autocmd BufWritePre <buffer> EslintFixAll]]
-  end
-}
+end
 -- Autocomplete
 local cmp = require'cmp'
 
@@ -104,6 +104,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
    update_in_insert = false,
  }
 )
--- show diagnostics on hover
-vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.lsp.diagnostic.show_line_diagnostics({focusable=false})]]
 
+-- show diagnostics on hover
+--vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.lsp.diagnostic.show_line_diagnostics({focusable=false})]]
+--vim.cmd [[autocmd CursorHoldI * silent! lua vim.lsp.buf.signature_help()]]

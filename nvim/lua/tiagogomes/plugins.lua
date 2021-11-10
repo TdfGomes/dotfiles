@@ -29,7 +29,7 @@ return packer.startup(function()
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/nvim-cmp'
-  -- snipet engine
+  -- Snipet engine
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip' 
   -- Neovim Tree shitter
@@ -50,6 +50,7 @@ return packer.startup(function()
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons'}
   }
+  -- Tree 
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons',
@@ -64,6 +65,9 @@ return packer.startup(function()
       },
     } end
   }
+  -- Comment 
+  use 'tpope/vim-commentary'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 end)
 
 

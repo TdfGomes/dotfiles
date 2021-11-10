@@ -71,87 +71,116 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/LuaSnip"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/hoob3rt/lualine.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\n£\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\24update_focused_file\1\0\2\venable\2\15update_cwd\2\1\0\4\14auto_open\2\18disable_netrw\1\15update_cwd\2\15auto_close\2\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\n£\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\24update_focused_file\1\0\2\venable\2\15update_cwd\2\1\0\4\15update_cwd\2\15auto_close\2\14auto_open\2\18disable_netrw\1\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-ts-autotag"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.nvim"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/onedark.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/TdfGomes/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   playground = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/playground"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope-fzy-native.nvim"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/telescope-fzy-native.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/telescope-fzy-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzy-native.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+    path = "/Users/tiago.gomes/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n£\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\24update_focused_file\1\0\2\venable\2\15update_cwd\2\1\0\4\14auto_open\2\18disable_netrw\1\15update_cwd\2\15auto_close\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+try_loadstring("\27LJ\2\n£\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\24update_focused_file\1\0\2\venable\2\15update_cwd\2\1\0\4\15update_cwd\2\15auto_close\2\14auto_open\2\18disable_netrw\1\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
 if should_profile then save_profiles() end
 

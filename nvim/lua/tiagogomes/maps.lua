@@ -6,6 +6,7 @@ map('n', '<leader>fs', "<cmd>lua require('telescope.builtin').grep_string({ path
 map('n', '<leader>ff', "<cmd>lua require('telescope.builtin').find_files()<cr>", {noremap = true})
 map('n', '<leader>fg', "<cmd>lua require('telescope.builtin').live_grep()<cr>", {noremap = true})
 map('n', '<leader>fb', "<cmd>lua require('telescope.builtin').buffers()<cr>", {noremap = true})
+map('n', '<leader>gb', "<cmd>lua require('telescope.builtin').git_branches()<cr>", {noremap = true})
 --window navigation
 map('n','<C-j>','<C-w>j', {noremap = true})
 map('n','<C-k>','<C-w>k', {noremap = true})

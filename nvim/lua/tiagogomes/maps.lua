@@ -34,6 +34,9 @@ local autocmds = {
     syntax_sync_clear = {
         {"BufLeave",'*{js,jsx,ts,tsx}',':syntax sync fromstart'};
     };
+    --show_diagnostics_on_hover = {
+    --    {"CursorHold", "*", "lua vim.lsp.diagnostic.show_line_diagnostics()"};
+    --};
 }
 
 nvim_create_augroups(autocmds)

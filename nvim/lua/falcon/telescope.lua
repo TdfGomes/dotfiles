@@ -28,14 +28,11 @@ require('telescope').setup {
         ["<C-j>"] = actions.move_selection_next,
         ["<C-k>"] = actions.move_selection_previous,
         ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
-          -- ["<C-q>"] = actions.send_to_qflist,
       },
       n = {
         ["<C-j>"] = actions.move_selection_next,
         ["<C-k>"] = actions.move_selection_previous,
-        -- ["<c-t>"] = trouble.open_with_trouble,
         ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
-        -- ["<C-i>"] = my_cool_custom_action,
       },
     }
   },
@@ -48,4 +45,4 @@ require('telescope').setup {
   }
 }
 
-require('telescope').load_extension('fzy_native')
+require('telescope').load_extension('fzy_native') 

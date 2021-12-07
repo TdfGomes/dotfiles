@@ -40,7 +40,7 @@ require('lualine').setup {
       },
     },
     lualine_c = {
-      {
+     {
         'filename',
         path= 0,
       },
@@ -74,4 +74,4 @@ require('lualine').setup {
     },
   },
   extensions = { 'fugitive', 'quickfix' }
-}
+} 

@@ -46,7 +46,7 @@ require('lualine').setup {
       },
       {
         'diagnostics',
-        sources = {'nvim_lsp'},
+        sources = {'nvim_diagnostic'},
         diagnostics_color = {
           -- Same values like general color option can be used here.
           error = {

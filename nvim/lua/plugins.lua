@@ -48,4 +48,5 @@ return require('packer').startup(function()
       },
     } end
   }
+  use 'editorconfig/editorconfig-vim'
 end)

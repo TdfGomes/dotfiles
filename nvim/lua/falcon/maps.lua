@@ -1,6 +1,5 @@
 local map = vim.api.nvim_set_keymap
 local nvim_create_augroups = require('falcon.functions').nvim_create_augroups
-
 --telescope
 map('n', '<leader>fs', "<cmd>lua require('telescope.builtin').grep_string({ path_display = true, search = vim.fn.input('Grep String > ')})<cr>", {noremap = true})
 map('n', '<leader>ff', "<cmd>lua require('telescope.builtin').find_files()<cr>", {noremap = true})
@@ -24,8 +23,7 @@ map('n', '<leader>dl',':diffget //3<cr>', {noremap = false})
 map('n', '<leader>dh',':diffget //2<cr>', {noremap = false})
 map('n', '<leader>gs', ':G<cr>', {noremap = false})
 --Open Explore
-map('n', '<C-e>', ':NvimTreeToggle<cr>', {noremap = true})
-
+map('n', '<leader>e', ':NvimTreeToggle<cr>', {noremap = true})
 -- autocmds
 local autocmds = {
     syntax_sync_fromstart = {
@@ -41,5 +39,4 @@ local autocmds = {
       {"Colorscheme", "*", 'highlight NvimTreeNormal guibg=#242b3'}
     },
 }
-
 nvim_create_augroups(autocmds)

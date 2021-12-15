@@ -8,3 +8,4 @@ brew "neovim", args: ["HEAD"]
 brew "ripgrep"
 brew "zsh-syntax-highlighting"
 cask "kitty"
+cask "slack"

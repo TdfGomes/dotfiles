@@ -85,6 +85,8 @@ for _, lsp in ipairs(servers) do
     on_attach = on_attach,
     handlers = handlers,
     capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+    root_dir = vim.lsp.buf.list_workspace_folders(),
+    root_dir = nvim_lsp.util.root_pattern('.git'),
     commands = {
       OrganizeImports = {
         organize_imports,

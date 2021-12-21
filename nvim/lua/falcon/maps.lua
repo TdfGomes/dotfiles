@@ -24,6 +24,10 @@ map('n', '<leader>dh',':diffget //2<cr>', {noremap = false})
 map('n', '<leader>gs', ':G<cr>', {noremap = false})
 --Open Explore
 map('n', '<leader>e', ':NvimTreeToggle<cr>', {noremap = true})
+-- Quickfixlist navigation
+map('n', '<leader>cc',':cclose<cr>', {noremap = false})
+map('n', '<C-[>',':cnext<cr>', {noremap = false})
+map('n', '<C-]>', ':cprevious<cr>', {noremap = false})
 -- autocmds
 local autocmds = {
     syntax_sync_fromstart = {

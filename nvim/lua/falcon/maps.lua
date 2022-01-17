@@ -1,5 +1,6 @@
 local map = vim.api.nvim_set_keymap
 local nvim_create_augroups = require('falcon.functions').nvim_create_augroups
+vim.cmd 'source ~/.config/nvim/lua/falcon/removeqfitem.vim'
 --telescope
 map('n', '<leader>fs', "<cmd>lua require('telescope.builtin').grep_string({ path_display = true, search = vim.fn.input('Grep String > ')})<cr>", {noremap = true})
 map('n', '<leader>ff', "<cmd>lua require('telescope.builtin').find_files()<cr>", {noremap = true})
@@ -42,5 +43,8 @@ local autocmds = {
     nvimtree_colorscheme = {
       {"Colorscheme", "*", 'highlight NvimTreeNormal guibg=#242b3'}
     },
+    remove_qf_item = {
+    {"FileType", "qf", "map <buffer> dd :RemoveQFItem<cr>"}
+  }
 }
 nvim_create_augroups(autocmds)

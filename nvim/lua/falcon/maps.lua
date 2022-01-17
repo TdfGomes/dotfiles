@@ -44,7 +44,7 @@ local autocmds = {
       {"Colorscheme", "*", 'highlight NvimTreeNormal guibg=#242b3'}
     },
     remove_qf_item = {
-    {"FileType", "qf", "map <buffer> dd :RemoveQFItem<cr>"}
-  }
+      {"FileType", "qf", "map <buffer> dd :RemoveQFItem<cr>"}
+    }
 }
 nvim_create_augroups(autocmds)

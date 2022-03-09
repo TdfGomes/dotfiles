@@ -37,7 +37,7 @@ return require('packer').startup(function()
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons',
-    config = function() require'nvim-tree'.setup {
+    config = function() require('nvim-tree').setup {
       disable_netrw = false,
       auto_open = true,
       auto_close = true,
@@ -46,6 +46,11 @@ return require('packer').startup(function()
         enable      = true,
         update_cwd  = true,
       },
+      actions = {
+        open_file = {
+          quit_on_open = true,
+        }
+      }
     } end
   }
   use 'editorconfig/editorconfig-vim'

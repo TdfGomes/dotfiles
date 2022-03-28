@@ -40,7 +40,6 @@ return require('packer').startup(function()
     config = function() require('nvim-tree').setup {
       disable_netrw = false,
       auto_open = true,
-      auto_close = true,
       update_cwd = true,
       update_focused_file = {
         enable      = true,

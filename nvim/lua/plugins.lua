@@ -39,7 +39,6 @@ return require('packer').startup(function()
     requires = 'kyazdani42/nvim-web-devicons',
     config = function() require('nvim-tree').setup {
       disable_netrw = false,
-      auto_open = true,
       update_cwd = true,
       update_focused_file = {
         enable      = true,
@@ -52,5 +51,4 @@ return require('packer').startup(function()
       }
     } end
   }
-  use 'editorconfig/editorconfig-vim'
 end)

@@ -48,6 +48,18 @@ return require('packer').startup(function()
         open_file = {
           quit_on_open = true,
         }
+      },
+      renderer = {
+        icons = {
+          glyphs = {
+            git = {
+              unstaged = " ",
+              staged =  " ",
+              renamed =  " ",
+              untracked =  " ",
+            }
+          }
+        }
       }
     } end
   }

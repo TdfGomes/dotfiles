@@ -7,7 +7,11 @@ highlight = {
       "javascriptreact",
       "javascript",
       "typescript",
-      "typescriptreact" 
+      "typescriptreact",
+      "json",
+      "css",
+      "html",
+      "rust"
     }
   },
   ensure_installed = {
@@ -19,6 +23,7 @@ highlight = {
     "javascript",
     "typescript",
     "css",
+    "rust"
   },
   autotag = {
     filetypes = {"javascriptreact", "javascript", "typescript", "typescriptreact" },

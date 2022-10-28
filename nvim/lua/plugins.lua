@@ -5,6 +5,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   --Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'nvim-treesitter/playground'
   use 'windwp/nvim-ts-autotag'
   use 'windwp/nvim-autopairs'
   -- LSP

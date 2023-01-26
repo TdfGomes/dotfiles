@@ -78,7 +78,7 @@ for type, icon in pairs(signs) do
 end
 
 -- setup servers
-local servers = { 'tsserver', 'eslint'}
+local servers = { 'tsserver', 'eslint', 'tailwindcss'}
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 for _, lsp in ipairs(servers) do
@@ -86,7 +86,6 @@ for _, lsp in ipairs(servers) do
     on_attach = on_attach,
     handlers = handlers,
     capabilities = capabilities,
-    root_dir = vim.lsp.buf.list_workspace_folders(),
     root_dir = nvim_lsp.util.root_pattern('.git'),
     commands = {
       OrganizeImports = {
@@ -97,29 +96,3 @@ for _, lsp in ipairs(servers) do
   }    
 end    
 
---Rust
-nvim_lsp.rust_analyzer.setup {
-  -- on_attach = on_attach,
-  capabilities = capabilities,
-  handlers = handlers,
-  settings = {
-    ["rust-analyzer"] = {
-      assist = {
-        importMergeBehavior = "last",
-        importPrefix = "by_self",
-      },
-      diagnostics = {
-        disabled = { "unresolved-import" }
-      },
-      cargo = {
-          loadOutDirsFromCheck = true
-      },
-      procMacro = {
-          enable = true
-      },
-      -- checkOnSave = {
-      --     command = "clippy"
-      -- },
-    }
-  }
-}

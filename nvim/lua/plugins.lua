@@ -29,6 +29,8 @@ return require('packer').startup(function()
   use 'tpope/vim-fugitive'
   -- Comment 
   use 'tpope/vim-commentary'
+  -- close all buffers but the current
+  use { 'numtostr/BufOnly.nvim', cmd = 'BufOnly' }
   -- Lualine
   use {
     'hoob3rt/lualine.nvim',

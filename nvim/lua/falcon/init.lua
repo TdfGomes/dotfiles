@@ -1,6 +1,6 @@
+require('falcon.lsp')
 require('falcon.treesitter')
 require('falcon.autopairs')
-require('falcon.lsp')
 require('falcon.telescope')
 require('falcon.colors')
 require('falcon.lualine')

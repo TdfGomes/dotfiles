@@ -4,6 +4,9 @@ local organize_imports = require('falcon.functions').organize_imports
 
 local on_attach = function(client, bufnr)
 
+  -- disable lsp syntax highlighting
+  client.server_capabilities.semanticTokensProvider = nil
+
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
@@ -78,7 +81,7 @@ for type, icon in pairs(signs) do
 end
 
 -- setup servers
-local servers = { 'tsserver', 'eslint', 'tailwindcss'}
+local servers = { 'tsserver', 'eslint' }
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 for _, lsp in ipairs(servers) do
@@ -86,7 +89,7 @@ for _, lsp in ipairs(servers) do
     on_attach = on_attach,
     handlers = handlers,
     capabilities = capabilities,
-    root_dir = nvim_lsp.util.root_pattern('.git'),
+    root_dir = nvim_lsp.util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git"),
     commands = {
       OrganizeImports = {
         organize_imports,

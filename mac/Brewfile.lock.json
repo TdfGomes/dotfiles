@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "44a1e064d0cf9c3ef8d1820be7988f762f222cf5"
+        "revision": "98605110483b68fac97c85f14f86d9120e0c6f88"
       },
       "homebrew/cask": {
-        "revision": "e562ec49f9867be6bb1821ff6f4f476018db9937"
+        "revision": "40434e6d6fc5589a5a737a08e9017c162d322862"
       },
       "homebrew/core": {
-        "revision": "adde72754549aed4c2f8e58552fd2bfdcbe964dd"
+        "revision": "790c3b085c023cb69586c3abfb65562b77c44a6b"
       }
     },
     "brew": {
@@ -245,12 +245,12 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.3.7",
+        "HOMEBREW_VERSION": "3.3.9",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "adde72754549aed4c2f8e58552fd2bfdcbe964dd",
-        "CLT": "13.0.0.0.1.1630607135",
+        "Homebrew/homebrew-core": "790c3b085c023cb69586c3abfb65562b77c44a6b",
+        "CLT": "13.2.0.0.1.1638488800",
         "Xcode": "13.1",
-        "macOS": "11.6.1"
+        "macOS": "11.6.2"
       }
     }
   }

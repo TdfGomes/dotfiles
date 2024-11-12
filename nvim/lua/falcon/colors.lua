@@ -9,7 +9,9 @@ M.c = {
   yellow = "#ebc275"
 }
 
-vim.g.onedark_style = 'cool'
-require('onedark').setup()
+require('onedark').setup {
+    style = 'cool'
+}
+require('onedark').load()
 
 return M

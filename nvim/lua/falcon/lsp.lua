@@ -81,7 +81,7 @@ for type, icon in pairs(signs) do
 end
 
 -- setup servers
-local servers = { 'tsserver', 'eslint' }
+local servers = { 'ts_ls', 'eslint' }
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 for _, lsp in ipairs(servers) do
@@ -97,5 +97,21 @@ for _, lsp in ipairs(servers) do
       }
     }
   }    
-end    
+end
+
+local css_servers = { 'cssls', 'css_variables', 'cssmodules_ls', 'tailwindcss' }
+local css_capabilities = vim.lsp.protocol.make_client_capabilities()
+
+css_capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+for _, css_server in ipairs(css_servers) do
+  nvim_lsp[css_server].setup {
+    capabilities = css_capabilities
+  }
+end
+
+
+
+
+
 

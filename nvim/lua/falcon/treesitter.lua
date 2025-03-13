@@ -11,6 +11,8 @@ highlight = {
       "json",
       "css",
       "html",
+      "rust",
+      "go",
       "query"
     }
   },
@@ -23,7 +25,13 @@ highlight = {
     "javascript",
     "typescript",
     "css",
+    "rust",
+    "go",
     "query"
+  },
+  autotag = {
+    filetypes = {"javascriptreact", "javascript", "typescript", "typescriptreact" },
+    enable = true
   },
   playground = {
     enable = true,

@@ -31,20 +31,20 @@ map('n', '<C-[>',':cnext<cr>', {noremap = false})
 map('n', '<C-]>', ':cprevious<cr>', {noremap = false})
 -- autocmds
 local autocmds = {
-    syntax_sync_fromstart = {
-        {"BufEnter",'*{js,jsx,ts,tsx}',':syntax sync fromstart'};
-    },
-    syntax_sync_clear = {
-        {"BufLeave",'*{js,jsx,ts,tsx}',':syntax sync fromstart'};
-    },
-    show_diagnostics_on_hover = {
-       {"CursorHold,CursorHoldI", "*", 'lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})'}
-    },
-    nvimtree_colorscheme = {
-      {"Colorscheme", "*", 'highlight NvimTreeNormal guibg=#242b3'}
-    },
-    remove_qf_item = {
-      {"FileType", "qf", "map <buffer> dd :RemoveQFItem<cr>"}
-    }
+  syntax_sync_fromstart = {
+    {"BufEnter", "*{js,jsx,ts,tsx}", ":syntax sync fromstart"},
+  },
+  syntax_sync_clear = {
+    {"BufLeave", "*{js,jsx,ts,tsx}", ":syntax sync clear"},
+  },
+  show_diagnostics_on_hover = {
+    {{"CursorHold", "CursorHoldI"}, "*", 'lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})'},
+  },
+  nvimtree_colorscheme = {
+    {"Colorscheme", "*", 'highlight NvimTreeNormal guibg=#242b3'},
+  },
+  remove_qf_item = {
+    {"FileType", "qf", "map <buffer> dd :RemoveQFItem<cr>"},
+  },
 }
 nvim_create_augroups(autocmds)

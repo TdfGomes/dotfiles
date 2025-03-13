@@ -23,10 +23,10 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
 
   if client.server_capabilities.document_formatting then
-    vim.api.nvim_command [[augroup Format]]
-    vim.api.nvim_command [[autocmd! * <buffer>]]
-    vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
-    vim.api.nvim_command [[augroup END]]
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = bufnr,
+      command = "EslintFixAll",
+    })
   end
 
   vim.cmd [[autocmd BufWritePre <buffer> EslintFixAll]]

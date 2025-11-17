@@ -1,7 +1,0 @@
-require('falcon.lsp')
-require('falcon.treesitter')
-require('falcon.autopairs')
-require('falcon.telescope')
-require('falcon.colors')
-require('falcon.lualine')
-require('falcon.maps')

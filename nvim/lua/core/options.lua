@@ -1,6 +1,5 @@
 local opt = vim.opt 
 
-vim.g.mapleader = ' '
 
 -- Give me some fenced codeblock goodness
 vim.g.markdown_fenced_languages = { "html", "javascript", "typescript", "css", "scss", "lua", "vim" }

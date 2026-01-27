@@ -8,11 +8,15 @@ return {
     },
     formatters_by_ft = {
       lua = { 'stylua' },
-      python = { 'isort', 'black' },
+      python = { 'ruff' },
       typescript = { 'prettier' },
       typescriptreact = { 'prettier' },
       javascript = { 'prettier' },
       javascriptreact = { 'prettier' },
+      css = { 'prettier' },
+      yaml = { 'prettier' },
+      json = { 'prettier' },
+      htlm = { 'prettier' },
     },
   },
 }

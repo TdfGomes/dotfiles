@@ -22,3 +22,7 @@ opt.relativenumber = true
 opt.splitbelow = true -- Put new windows below current
 opt.splitright = true -- Put new windows right of current
 
+--watchers
+opt.backupcopy = 'yes'
+opt.writebackup = false
+opt.swapfile = false

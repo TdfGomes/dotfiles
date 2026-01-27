@@ -8,6 +8,9 @@ return {
   -- Treesitter for syntax highlighting
   require('plugins.treesitter'),
 
+  -- Autopairs
+  require('plugins.autopairs'),
+
   -- File Explorer
   require('plugins.nvim-tree'),
 

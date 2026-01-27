@@ -4,7 +4,7 @@ return {
     ensure_installed = {
       -- lsp servers
       'tsserver',
-      'pyright',
+      'pylsp',
       'lua_ls',
       'eslint',
 
@@ -14,8 +14,7 @@ return {
       -- formatters
       'stylua',
       'prettier',
-      'black',
-      'isort',
+      'ruff',
     },
   },
 }

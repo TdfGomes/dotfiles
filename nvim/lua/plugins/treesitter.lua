@@ -17,10 +17,6 @@ return {
         'vimdoc',
       },
 
-      autotag = {
-        filetypes = { 'javascriptreact', 'javascript', 'typescript', 'typescriptreact' },
-        enable = true,
-      },
       -- Install parsers synchronously (only applied on :TSUpdate)
       sync_install = false,
 

@@ -33,22 +33,18 @@ return {
       }),
     })
 
-    local on_attach = require('plugins.lsp.handlers').on_attach
-    local capabilities = require('plugins.lsp.handlers').capabilities
-
     -- mason-lspconfig will now automatically use the servers installed by mason.nvim
     mason_lspconfig.setup({
       handlers = {
         function(server_name)
           lspconfig[server_name].setup({
-            on_attach = on_attach,
-            capabilities = capabilities,
+            capabilities = require('cmp_nvim_lsp').default_capabilities(),
           })
         end,
         ['lua_ls'] = function()
           lspconfig.lua_ls.setup({
             on_attach = on_attach,
-            capabilities = capabilities,
+            capabilities = require('cmp_nvim_lsp').default_capabilities(),
             settings = {
               Lua = {
                 runtime = { version = 'LuaJIT' },

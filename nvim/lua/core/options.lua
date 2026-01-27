@@ -1,16 +1,15 @@
-local opt = vim.opt 
-
+local opt = vim.opt
 
 -- Give me some fenced codeblock goodness
-vim.g.markdown_fenced_languages = { "html", "javascript", "typescript", "css", "scss", "lua", "vim" }
+vim.g.markdown_fenced_languages = { 'html', 'javascript', 'typescript', 'css', 'scss', 'lua', 'vim' }
 
 vim.o.updatetime = 250
 
 opt.cursorline = true
-opt.backspace = { "indent", "eol", "start" }
-opt.clipboard = "unnamedplus"
-opt.completeopt = "menu,menuone,noselect"
-opt.encoding = "utf-8" -- Set default encoding to UTF-8
+opt.backspace = { 'indent', 'eol', 'start' }
+opt.clipboard = 'unnamedplus'
+opt.completeopt = 'menu,menuone,noselect'
+opt.encoding = 'utf-8' -- Set default encoding to UTF-8
 -- tabs
 opt.tabstop = 2
 opt.shiftwidth = 2

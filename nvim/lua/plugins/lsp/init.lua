@@ -188,7 +188,9 @@ return {
       docker_compose_language_service = {},
       html = { filetypes = { 'html' } },
       cssls = {},
-      ts_ls = {},
+      ts_ls = {
+        workspace = {},
+      },
       eslint = {
         settings = {
           validate = 'on',
